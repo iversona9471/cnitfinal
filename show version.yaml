@@ -1,0 +1,24 @@
+--- 
+- name: CONFIGURE IPv4 ADDRESSING 
+  hosts: CSR1kv 
+  gather_facts: false 
+  connection: local 
+ 
+  tasks: 
+   - name: SET IPv4 ADDRESS  
+     ios_config: 
+       parents: "interface GigabitEthernet1" 
+       lines: 
+         - description IPv4 ADDRESS  
+         - ip address 192.168.56.1 255.255.255.0 
+ 
+   - name: SHOW IP INTERFACE BRIEF  
+     ios_command: 
+       commands: 
+         - show ip interface brief 
+     register: output 
+ 
+   - name: SAVE OUTPUT ./ios_configurations/ 
+     copy:  
+       content: "{{ output.stdout[0] }}" 
+       dest: "ios_configurations/IPv4_output_{{ inventory_hostname }}.txt"
