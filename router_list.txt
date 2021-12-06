@@ -1,0 +1,2 @@
+[{'server_ip': '192.168.56.108', 'server_port': '22', 'user':'cisco', 'passwd':'cisco123!'},
+{'server_ip': '192.168.56.109', 'server_port': '22', 'user':'cisco', 'passwd':'cisco123!'}]

@@ -1,0 +1,2 @@
+[routers]
+CSR1 ansible_user=cisco ansible_password=cisco123! ansible_host=192.168.56.109 ansible_become=yes ansible_become_method=enable ansible_command_timeout=30

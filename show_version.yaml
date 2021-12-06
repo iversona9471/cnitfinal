@@ -1,0 +1,17 @@
+---
+- name: Using show version and saving to file
+  hosts: CSR1
+  gather_facts: false
+  connection: local
+
+  tasks:
+    - name: Run show ver and save to file
+      ios_command:
+        commands:
+          - show ver
+      register: output
+
+    - name: Save output to file
+      copy:
+        content: "{{ output.stdout[0] }}"
+        dest: "./sh_ver_folder/{{inventory_hostname}}.txt"
