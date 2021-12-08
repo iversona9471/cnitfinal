@@ -22,7 +22,7 @@ When the command 'show version' is issued to the bot, the bot will run a process
 
 
 Monitoring:
-When the command 'monitor vpns' is issued to the bot, the bot will run a process that checks the VPN status every 5 seconds. If the VPN status goes Down,
+When the command 'monitor vpns' is issued to the bot, the bot will run a process that checks the VPN status every 20 seconds. If the VPN status goes Down,
 it will pull the new IP address from CSR2 and apply it to CSR1. 
 
 
