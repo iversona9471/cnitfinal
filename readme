@@ -10,21 +10,21 @@ Sections:
 Backup IOS:
 When the command 'backup' is issued to the bot, the bot will run a process to backup and save the running configuration of the destination router and save the file
 to the respective file location.
-![Backup Success](https://github.com/iversona9471/CNIT381-Final/blob/final/backup%20success.PNG)
+(https://github.com/iversona9471/CNIT381-Final/blob/final/backup%20success.PNG)
 
 Create Loopback:
 When the command 'create loopback' is issued to the bot, the bot will run a process to create loopback interface 69 with a IPv4 address of 69.69.69.69 
 with a subnet mask of 255.255.255.0 on the destination router. 
-
+(https://github.com/iversona9471/CNIT381-Final/blob/final/craete%20loopback%20success.PNG)
 
 Get IOS Version:
 When the command 'show version' is issued to the bot, the bot will run a process to get the IOS version running on the destination router. 
-
+(https://github.com/iversona9471/CNIT381-Final/blob/final/sh%20ver%20success.PNG)
 
 Monitoring:
 When the command 'monitor vpns' is issued to the bot, the bot will run a process that checks the VPN status every 5 seconds. If the VPN status goes Down,
 it will pull the new IP address from CSR2 and apply it to CSR1. 
-
+(https://github.com/iversona9471/CNIT381-Final/blob/final/monitor%20vpns%20running.PNG)
 
 
 
