@@ -10,7 +10,7 @@ Sections:
 Backup IOS:
 When the command 'backup' is issued to the bot, the bot will run a process to backup and save the running configuration of the destination router and save the file
 to the respective file location.
-![Backup Success](/CNIT381-Final/backup success.png)
+![Backup Success](https://github.com/iversona9471/CNIT381-Final/blob/final/backup%20success.PNG)
 
 Create Loopback:
 When the command 'create loopback' is issued to the bot, the bot will run a process to create loopback interface 69 with a IPv4 address of 69.69.69.69 
