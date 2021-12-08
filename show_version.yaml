@@ -1,6 +1,6 @@
 ---
 - name: Using show version and saving to file
-  hosts: CSR1
+  hosts: routers
   gather_facts: false
   connection: local
 

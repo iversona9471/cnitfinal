@@ -1,2 +1,15 @@
 # Enter the hosts or devices for Ansible playbooks
-CSR1 ansible_user=cisco ansible_password=cisco123! ansible_host=192.168.56.109 ansible_become=yes ansible_become_method=enable ansible_command_timeout=30
+[routers]
+CSR1 ansible_host=192.168.56.109
+CRS2 ansible_host=192.168.56.108
+
+[routers:vars]
+ansible_network_os=ios
+ansible_user=cisco
+ansible_ssh_pass=cisco123!
+ansible_become=yes
+ansible_become_method=enable
+ansible_become_pass=cisco123!
+
+[all:vars]
+ansible_port=22
