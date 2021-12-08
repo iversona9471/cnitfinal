@@ -13,21 +13,24 @@ Sections:
   4) Monitor VPN Connection
 
 
-Backup IOS:
+Backup IOS (Paramiko/Netmiko):
 When the command 'backup' is issued to the bot, the bot will run a process to backup and save the running configuration of the destination router and save the file
 to the respective file location.
 (https://github.com/iversona9471/CNIT381-Final/blob/final/backup%20success.PNG)
 
-Create Loopback:
+Create Loopback (Netconf/Restconf):
 When the command 'create loopback' is issued to the bot, the bot will run a process to create loopback interface 69 with a IPv4 address of 69.69.69.69 
 with a subnet mask of 255.255.255.0 on the destination router. 
 (https://github.com/iversona9471/CNIT381-Final/blob/final/craete%20loopback%20success.PNG)
 
-Get IOS Version:
+Get IOS Version (Ansible):
 When the command 'show version' is issued to the bot, the bot will run a process to get the IOS version running on the destination router. 
 (https://github.com/iversona9471/CNIT381-Final/blob/final/sh%20ver%20success.PNG)
 
-Monitoring:
+Monitor Interfaces (Genie Robot):
+When the command "monitor interfaces" is issues to the host, the bot will run a process that will continuously monitor the interfaces of each router and return which interfaces are down.
+
+Monitor VPNs:
 When the command 'monitor vpns' is issued to the bot, the bot will run a process that checks the VPN status every 20 seconds. If the VPN status goes Down,
 it will pull the new IP address from CSR2 and apply it to CSR1. 
 (https://github.com/iversona9471/CNIT381-Final/blob/final/monitor%20vpns%20running.PNG)
